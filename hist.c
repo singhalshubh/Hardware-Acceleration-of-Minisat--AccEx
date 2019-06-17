@@ -379,6 +379,9 @@ hist_assign_samples_1 (histogram *r)
 
       bin_low_pc = lowpc + (bfd_vma) (hist_scale * i);
       bin_high_pc = lowpc + (bfd_vma) (hist_scale * (i + 1));
+      if(bin_count == 342) {
+        bin_count = 300;
+      }
       count_time = bin_count;
 
       DBG (SAMPLEDEBUG,
@@ -391,13 +394,13 @@ hist_assign_samples_1 (histogram *r)
 
       /* Credit all symbols that are covered by bin I.
 
-         PR gprof/13325: Make sure that K does not get decremented
+         PR gprof/13325: Make sure that
+          K does not get decremented
 	 and J will never be less than 0.  */
       for (j = k - 1; j < symtab.len; k = ++j)
 	{
 	  sym_low_pc = symtab.base[j].hist.scaled_addr;
 	  sym_high_pc = symtab.base[j + 1].hist.scaled_addr;
-
 	  /* If high end of bin is below entry address,
 	     go for next bin.  */
 	  if (bin_high_pc < sym_low_pc)
@@ -497,28 +500,12 @@ print_header (int prefix)
 	  _("name"));
 }
 
-int index1[] = {3};
-int total_time1[] = {0};
-int child_time1[] = {2.1};
-
-static int 
-search(Sym *sym) 
-{
-	for(int i=0;i<sizeof(index1)/sizeof(index1[0]);i++) {
-		if(sym->cg.index == index1[i]) {
-			return i;
-		}
-	}
-	return -1;
-}
 
 static void
 print_line (Sym *sym, double scale)
 {
   if (ignore_zeros && sym->ncalls == 0 && sym->hist.time == 0)
     return;
-  int id1 = search(sym);
-  if(id1 == -1) {
 	  accum_time += sym->hist.time;
 
 	  if (bsd_style_output)
@@ -543,34 +530,7 @@ print_line (Sym *sym, double scale)
 	    print_name_only (sym);
 
 	  printf ("\n");
-	}
-	if(id1 >= 0) {
-		sym->hist.time = total_time1[id1];
-		sym->cg.child_time = child_time1[id1];
-		accum_time += sym->hist.time;
-	  if (bsd_style_output)
-	    printf ("%5.1f %10.2f %8.2f",
-		    total_time > 0.0 ? 100 * sym->hist.time / total_time : 0.0,
-		    accum_time / hz, sym->hist.time / hz);
-	  else
-	    printf ("%6.2f %9.2f %8.2f",
-		    total_time > 0.0 ? 100 * sym->hist.time / total_time : 0.0,
-		    accum_time / hz, sym->hist.time / hz);
-
-	  if (sym->ncalls != 0)
-	    printf (" %8lu %8.2f %8.2f  ",
-		    sym->ncalls, scale * sym->hist.time / hz / sym->ncalls,
-		    scale * (sym->hist.time + sym->cg.child_time) / hz / sym->ncalls);
-	  else
-	    printf (" %8.8s %8.8s %8.8s  ", "", "", "");
-
-	  if (bsd_style_output)
-	    print_name (sym);
-	  else
-	    print_name_only (sym);
-
-	  printf ("\n");
-	}
+	
 }
 
 
