@@ -358,6 +358,8 @@ scale_and_align_entries (void)
    four bytes of text space and never have any overlap (the two end
    cases, above).  */
 
+int count = 0;
+int count_arg = 0;
 static void
 hist_assign_samples_1 (histogram *r)
 {
@@ -376,12 +378,14 @@ hist_assign_samples_1 (histogram *r)
       bin_count = r->sample[i];
       if (! bin_count)
 	continue;
-
+      count_arg++;
+      DBG(SAMPLEDEBUG,printf ("\n\nCount is : %d\n",count_arg));
       bin_low_pc = lowpc + (bfd_vma) (hist_scale * i);
       bin_high_pc = lowpc + (bfd_vma) (hist_scale * (i + 1));
-      if(bin_count == 342) {
-        bin_count = 300;
+      if(count == 1){
+        bin_count = 10;
       }
+      count++;
       count_time = bin_count;
 
       DBG (SAMPLEDEBUG,
@@ -390,6 +394,8 @@ hist_assign_samples_1 (histogram *r)
 		    (unsigned long) (sizeof (UNIT) * bin_low_pc),
 		    (unsigned long) (sizeof (UNIT) * bin_high_pc),
 		    bin_count));
+       DBG (SAMPLEDEBUG,
+     printf ("--->%s--->",symtab.base[k].name));
       total_time += count_time;
 
       /* Credit all symbols that are covered by bin I.
@@ -399,7 +405,8 @@ hist_assign_samples_1 (histogram *r)
 	 and J will never be less than 0.  */
       for (j = k - 1; j < symtab.len; k = ++j)
 	{
-	  sym_low_pc = symtab.base[j].hist.scaled_addr;
+	  DBG(SAMPLEDEBUG,printf ("--->%s--->",symtab.base[j].name));
+    sym_low_pc = symtab.base[j].hist.scaled_addr;
 	  sym_high_pc = symtab.base[j + 1].hist.scaled_addr;
 	  /* If high end of bin is below entry address,
 	     go for next bin.  */
@@ -417,7 +424,7 @@ hist_assign_samples_1 (histogram *r)
 	    {
 	      DBG (SAMPLEDEBUG,
 		   printf (
-	       "[assign_samples] [0x%lx,0x%lx) %s gets %f ticks %ld overlap\n",
+	       "[assign_samples] [0x%lx,0x%lx) %s gets %f ticks %ld overlap",
 			   (unsigned long) symtab.base[j].addr,
 			   (unsigned long) (sizeof (UNIT) * sym_high_pc),
 			   symtab.base[j].name, overlap * count_time / hist_scale,
@@ -441,10 +448,11 @@ hist_assign_samples_1 (histogram *r)
 		}
 	    }
 	}
+  
+  DBG (SAMPLEDEBUG, printf ("\n"));
     }
-
   DBG (SAMPLEDEBUG, printf ("[assign_samples] total_time %f\n",
-			    total_time));
+			    total_time-3));
 }
 
 /* Calls 'hist_assign_sampes_1' for all histogram records read so far. */

@@ -1,13 +1,774 @@
+[main] debug-level=0xffffffff
+[core_sym_class] called.4507 is of class b
+[core_sym_class] __JCR_LIST__ is of class d
+[core_sym_class] completed.7594 is of class b
+[core_sym_class] __FRAME_END__ is of class r
+[core_sym_class] __JCR_END__ is of class d
+[core_sym_class] _DYNAMIC is of class d
+[core_sym_class] __GNU_EH_FRAME_HDR is of class r
+[core_sym_class] _GLOBAL_OFFSET_TABLE_ is of class d
+[core_sym_class] _ITM_deregisterTMCloneTable is of class w
+[core_sym_class] puts@@GLIBC_2.2.5 is of class U
+[core_sym_class] __GI_memmove is of class U
+[core_sym_class] _edata is of class D
+[core_sym_class] _mcleanup@@GLIBC_2.2.5 is of class U
+[core_sym_class] __libc_start_main@@GLIBC_2.2.5 is of class U
+[core_sym_class] __data_start is of class D
+[core_sym_class] __monstartup@@GLIBC_2.2.5 is of class U
+[core_sym_class] __dso_handle is of class D
+[core_sym_class] _IO_stdin_used is of class R
+[core_sym_class] _end is of class B
+[core_sym_class] __bss_start is of class B
+[core_sym_class] mcount@@GLIBC_2.2.5 is of class U
+[core_sym_class] __GI_memcpy is of class U
+[core_sym_class] _Jv_RegisterClasses is of class w
+[core_sym_class] __cxa_atexit@@GLIBC_2.2.5 is of class U
+[core_sym_class] __GI_memset is of class U
+[core_sym_class] __TMC_END__ is of class D
+[core_sym_class] _ITM_registerTMCloneTable is of class w
+[core_create_function_syms] rejecting: 0x0 .interp
+[core_create_function_syms] rejecting: 0x0 .note.ABI-tag
+[core_create_function_syms] rejecting: 0x0 .note.gnu.build-id
+[core_create_function_syms] rejecting: 0x0 .gnu.hash
+[core_create_function_syms] rejecting: 0x0 .dynsym
+[core_create_function_syms] rejecting: 0x0 .dynstr
+[core_create_function_syms] rejecting: 0x0 .gnu.version
+[core_create_function_syms] rejecting: 0x0 .gnu.version_r
+[core_create_function_syms] rejecting: 0x0 .rela.dyn
+[core_create_function_syms] rejecting: 0x0 .rela.plt
+[core_create_function_syms] rejecting: 0x0 .init
+[core_create_function_syms] rejecting: 0x0 .plt
+[core_create_function_syms] rejecting: 0x0 .text
+[core_create_function_syms] rejecting: 0x0 .fini
+[core_create_function_syms] rejecting: 0x0 .rodata
+[core_create_function_syms] rejecting: 0x0 .eh_frame_hdr
+[core_create_function_syms] rejecting: 0x0 .eh_frame
+[core_create_function_syms] rejecting: 0x0 .init_array
+[core_create_function_syms] rejecting: 0x0 .fini_array
+[core_create_function_syms] rejecting: 0x0 .jcr
+[core_create_function_syms] rejecting: 0x0 .dynamic
+[core_create_function_syms] rejecting: 0x0 .got
+[core_create_function_syms] rejecting: 0x0 .got.plt
+[core_create_function_syms] rejecting: 0x0 .data
+[core_create_function_syms] rejecting: 0x0 .bss
+[core_create_function_syms] rejecting: 0x0 .comment
+[core_create_function_syms] rejecting: 0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/gcrt1.o
+[core_sym_class] called.4507 is of class b
+[core_create_function_syms] rejecting: 0x0 called.4507
+[core_create_function_syms] rejecting: 0x0 crtstuff.c
+[core_sym_class] __JCR_LIST__ is of class d
+[core_create_function_syms] rejecting: 0x0 __JCR_LIST__
+[get_src_info] no info for 0x4005c0 (crtstuff.c:0,deregister_tm_clones)
+[core_create_function_syms] 0 deregister_tm_clones 0x4005c0
+[get_src_info] no info for 0x400600 (crtstuff.c:0,register_tm_clones)
+[core_create_function_syms] 1 register_tm_clones 0x400600
+[get_src_info] no info for 0x400640 (crtstuff.c:0,__do_global_dtors_aux)
+[core_create_function_syms] 2 __do_global_dtors_aux 0x400640
+[core_sym_class] completed.7594 is of class b
+[core_create_function_syms] rejecting: 0x4 completed.7594
+[get_src_info] no info for 0x600e10 (<unknown>:0,atexit)
+[core_create_function_syms] 3 __do_global_dtors_aux_fini_array_entry 0x600e10
+[get_src_info] no info for 0x400660 (crtstuff.c:0,frame_dummy)
+[core_create_function_syms] 4 frame_dummy 0x400660
+[get_src_info] no info for 0x600e08 (<unknown>:0,atexit)
+[core_create_function_syms] 5 __frame_dummy_init_array_entry 0x600e08
+[core_create_function_syms] rejecting: 0x0 sample.c
+[get_src_info] no info for 0x400686 (sample.c:0,func5)
+[core_create_function_syms] 6 func5 0x400686
+[get_src_info] no info for 0x4006b6 (sample.c:0,func4)
+[core_create_function_syms] 7 func4 0x4006b6
+[get_src_info] no info for 0x400720 (sample.c:0,func2)
+[core_create_function_syms] 8 func2 0x400720
+[get_src_info] no info for 0x40075a (sample.c:0,func1)
+[core_create_function_syms] 9 func1 0x40075a
+[core_create_function_syms] rejecting: 0x0 crtstuff.c
+[core_sym_class] __FRAME_END__ is of class r
+[core_create_function_syms] rejecting: 0x1c0 __FRAME_END__
+[core_sym_class] __JCR_END__ is of class d
+[core_create_function_syms] rejecting: 0x0 __JCR_END__
+[core_create_function_syms] rejecting: 0x0 
+[get_src_info] no info for 0x600e10 (<unknown>:0,atexit)
+[core_create_function_syms] 10 __init_array_end 0x600e10
+[core_sym_class] _DYNAMIC is of class d
+[core_create_function_syms] rejecting: 0x0 _DYNAMIC
+[get_src_info] no info for 0x600e08 (<unknown>:0,atexit)
+[core_create_function_syms] 11 __init_array_start 0x600e08
+[core_sym_class] __GNU_EH_FRAME_HDR is of class r
+[core_create_function_syms] rejecting: 0x0 __GNU_EH_FRAME_HDR
+[core_sym_class] _GLOBAL_OFFSET_TABLE_ is of class d
+[core_create_function_syms] rejecting: 0x0 _GLOBAL_OFFSET_TABLE_
+[get_src_info] no info for 0x400840 (<unknown>:0,__libc_csu_fini)
+[core_create_function_syms] 12 __libc_csu_fini 0x400840
+[get_src_info] no info for 0x4006eb (<unknown>:0,func3)
+[core_create_function_syms] 13 func3 0x4006eb
+[core_sym_class] _ITM_deregisterTMCloneTable is of class w
+[core_create_function_syms] rejecting: 0x0 _ITM_deregisterTMCloneTable
+[get_src_info] no info for 0x601040 (<unknown>:0,atexit)
+[core_create_function_syms] 14 data_start 0x601040
+[core_sym_class] puts@@GLIBC_2.2.5 is of class U
+[core_create_function_syms] rejecting: 0x0 puts@@GLIBC_2.2.5
+[get_src_info] no info for 0x400850 (<unknown>:0,atexit)
+[core_create_function_syms] 15 atexit 0x400850
+[core_sym_class] __GI_memmove is of class U
+[core_create_function_syms] rejecting: 0x0 __GI_memmove
+[core_sym_class] _edata is of class D
+[core_create_function_syms] rejecting: 0x10 _edata
+[get_src_info] no info for 0x40087c (<unknown>:0,atexit)
+[core_create_function_syms] 16 _fini 0x40087c
+[core_sym_class] _mcleanup@@GLIBC_2.2.5 is of class U
+[core_create_function_syms] rejecting: 0x0 _mcleanup@@GLIBC_2.2.5
+[core_sym_class] __libc_start_main@@GLIBC_2.2.5 is of class U
+[core_create_function_syms] rejecting: 0x0 __libc_start_main@@GLIBC_2.2.5
+[core_sym_class] __data_start is of class D
+[core_create_function_syms] rejecting: 0x0 __data_start
+[core_sym_class] __monstartup@@GLIBC_2.2.5 is of class U
+[core_create_function_syms] rejecting: 0x0 __monstartup@@GLIBC_2.2.5
+[get_src_info] no info for 0x400570 (<unknown>:0,__gmon_start__)
+[core_create_function_syms] 17 __gmon_start__ 0x400570
+[core_sym_class] __dso_handle is of class D
+[core_create_function_syms] rejecting: 0x8 __dso_handle
+[core_sym_class] _IO_stdin_used is of class R
+[core_create_function_syms] rejecting: 0x0 _IO_stdin_used
+[get_src_info] no info for 0x4007d0 (<unknown>:0,__libc_csu_init)
+[core_create_function_syms] 18 __libc_csu_init 0x4007d0
+[core_sym_class] _end is of class B
+[core_create_function_syms] rejecting: 0x8 _end
+[get_src_info] no info for 0x400540 (<unknown>:0,_start)
+[core_create_function_syms] 19 _start 0x400540
+[core_sym_class] __bss_start is of class B
+[core_create_function_syms] rejecting: 0x0 __bss_start
+[get_src_info] no info for 0x40078f (<unknown>:0,main)
+[core_create_function_syms] 20 main 0x40078f
+[core_sym_class] mcount@@GLIBC_2.2.5 is of class U
+[core_create_function_syms] rejecting: 0x0 mcount@@GLIBC_2.2.5
+[get_src_info] no info for 0x400885 (<unknown>:0,atexit)
+[core_create_function_syms] 21 etext 0x400885
+[core_sym_class] __GI_memcpy is of class U
+[core_create_function_syms] rejecting: 0x0 __GI_memcpy
+[core_sym_class] _Jv_RegisterClasses is of class w
+[core_create_function_syms] rejecting: 0x0 _Jv_RegisterClasses
+[core_sym_class] __cxa_atexit@@GLIBC_2.2.5 is of class U
+[core_create_function_syms] rejecting: 0x0 __cxa_atexit@@GLIBC_2.2.5
+[core_sym_class] __GI_memset is of class U
+[core_create_function_syms] rejecting: 0x0 __GI_memset
+[core_sym_class] __TMC_END__ is of class D
+[core_create_function_syms] rejecting: 0x10 __TMC_END__
+[core_sym_class] _ITM_registerTMCloneTable is of class w
+[core_create_function_syms] rejecting: 0x0 _ITM_registerTMCloneTable
+[get_src_info] no info for 0x4004b8 (<unknown>:0,atexit)
+[core_create_function_syms] 22 _init 0x4004b8
+[symtab_finalize] favor __frame_dummy_init_array_entry@tf over __init_array_start@tf (addr=600e08)
+[symtab_finalize] favor __do_global_dtors_aux_fini_array_entry@tf over __init_array_end@tf (addr=600e10)
+[symtab_finalize]: removed 2 duplicate entries
+[symtab_finalize] 0x4004b8-0x40053f	_init
+[symtab_finalize] 0x400540-0x40056f	_start
+[symtab_finalize] 0x400570-0x4005bf	__gmon_start__
+[symtab_finalize] 0x4005c0-0x4005ff	deregister_tm_clones
+[symtab_finalize] 0x400600-0x40063f	register_tm_clones
+[symtab_finalize] 0x400640-0x40065f	__do_global_dtors_aux
+[symtab_finalize] 0x400660-0x400685	frame_dummy
+[symtab_finalize] 0x400686-0x4006b5	func5
+[symtab_finalize] 0x4006b6-0x4006ea	func4
+[symtab_finalize] 0x4006eb-0x40071f	func3
+[symtab_finalize] 0x400720-0x400759	func2
+[symtab_finalize] 0x40075a-0x40078e	func1
+[symtab_finalize] 0x40078f-0x4007cf	main
+[symtab_finalize] 0x4007d0-0x40083f	__libc_csu_init
+[symtab_finalize] 0x400840-0x40084f	__libc_csu_fini
+[symtab_finalize] 0x400850-0x40087b	atexit
+[symtab_finalize] 0x40087c-0x400884	_fini
+[symtab_finalize] 0x400885-0x600e07	etext
+[symtab_finalize] 0x600e08-0x600e0f	__frame_dummy_init_array_entry
+[symtab_finalize] 0x600e10-0x60103f	__do_global_dtors_aux_fini_array_entry
+[symtab_finalize] 0x601040-0x400878	data_start
+[parse_id] __mcleanup -> *:__mcleanup
+[parse_id] __mcleanup -> *:__mcleanup
+[parse_id] __mcleanup -> *:__mcleanup
+[parse_id] __mcount_internal -> *:__mcount_internal
+[parse_id] __mcount_internal -> *:__mcount_internal
+[parse_id] __mcount_internal -> *:__mcount_internal
+[parse_id] __mcount -> *:__mcount
+[parse_id] __mcount -> *:__mcount
+[parse_id] __mcount -> *:__mcount
+[parse_id] _mcount -> *:_mcount
+[parse_id] _mcount -> *:_mcount
+[parse_id] _mcount -> *:_mcount
+[parse_id] mcount -> *:mcount
+[parse_id] mcount -> *:mcount
+[parse_id] mcount -> *:mcount
+[parse_id] _gprof_mcount -> *:_gprof_mcount
+[parse_id] _gprof_mcount -> *:_gprof_mcount
+[parse_id] _gprof_mcount -> *:_gprof_mcount
+[sym_id_parse] syms[INCL_GRAPH]:
+[sym_id_parse] syms[EXCL_GRAPH]:
+[sym_id_parse] syms[INCL_ARCS]:
+[sym_id_parse] syms[EXCL_ARCS]:
+[sym_id_parse] syms[INCL_FLAT]:
+[sym_id_parse] syms[EXCL_FLAT]:
+[sym_id_parse] syms[INCL_TIME]:
+[sym_id_parse] syms[EXCL_TIME]:
+[sym_id_parse] syms[INCL_ANNO]:
+[sym_id_parse] syms[EXCL_ANNO]:
+[sym_id_parse] syms[INCL_EXEC]:
+[sym_id_parse] syms[EXCL_EXEC]:
+[hist_read_rec] n_lowpc 0x400540 n_highpc 0x400888 ncnt 212
+[hist_read_rec] 0x400540: 0
+[hist_read_rec] 0x400543: 0
+[hist_read_rec] 0x400547: 0
+[hist_read_rec] 0x40054b: 0
+[hist_read_rec] 0x40054f: 0
+[hist_read_rec] 0x400553: 0
+[hist_read_rec] 0x400557: 0
+[hist_read_rec] 0x40055b: 0
+[hist_read_rec] 0x40055f: 0
+[hist_read_rec] 0x400563: 0
+[hist_read_rec] 0x400567: 0
+[hist_read_rec] 0x40056b: 0
+[hist_read_rec] 0x40056f: 0
+[hist_read_rec] 0x400573: 0
+[hist_read_rec] 0x400577: 0
+[hist_read_rec] 0x40057b: 0
+[hist_read_rec] 0x40057f: 0
+[hist_read_rec] 0x400583: 0
+[hist_read_rec] 0x400587: 0
+[hist_read_rec] 0x40058b: 0
+[hist_read_rec] 0x40058f: 0
+[hist_read_rec] 0x400593: 0
+[hist_read_rec] 0x400597: 0
+[hist_read_rec] 0x40059b: 0
+[hist_read_rec] 0x40059f: 0
+[hist_read_rec] 0x4005a3: 0
+[hist_read_rec] 0x4005a7: 0
+[hist_read_rec] 0x4005aa: 0
+[hist_read_rec] 0x4005ae: 0
+[hist_read_rec] 0x4005b2: 0
+[hist_read_rec] 0x4005b6: 0
+[hist_read_rec] 0x4005ba: 0
+[hist_read_rec] 0x4005be: 0
+[hist_read_rec] 0x4005c2: 0
+[hist_read_rec] 0x4005c6: 0
+[hist_read_rec] 0x4005ca: 0
+[hist_read_rec] 0x4005ce: 0
+[hist_read_rec] 0x4005d2: 0
+[hist_read_rec] 0x4005d6: 0
+[hist_read_rec] 0x4005da: 0
+[hist_read_rec] 0x4005de: 0
+[hist_read_rec] 0x4005e2: 0
+[hist_read_rec] 0x4005e6: 0
+[hist_read_rec] 0x4005ea: 0
+[hist_read_rec] 0x4005ee: 0
+[hist_read_rec] 0x4005f2: 0
+[hist_read_rec] 0x4005f6: 0
+[hist_read_rec] 0x4005fa: 0
+[hist_read_rec] 0x4005fe: 0
+[hist_read_rec] 0x400602: 0
+[hist_read_rec] 0x400606: 0
+[hist_read_rec] 0x40060a: 0
+[hist_read_rec] 0x40060e: 0
+[hist_read_rec] 0x400612: 0
+[hist_read_rec] 0x400615: 0
+[hist_read_rec] 0x400619: 0
+[hist_read_rec] 0x40061d: 0
+[hist_read_rec] 0x400621: 0
+[hist_read_rec] 0x400625: 0
+[hist_read_rec] 0x400629: 0
+[hist_read_rec] 0x40062d: 0
+[hist_read_rec] 0x400631: 0
+[hist_read_rec] 0x400635: 0
+[hist_read_rec] 0x400639: 0
+[hist_read_rec] 0x40063d: 0
+[hist_read_rec] 0x400641: 0
+[hist_read_rec] 0x400645: 0
+[hist_read_rec] 0x400649: 0
+[hist_read_rec] 0x40064d: 0
+[hist_read_rec] 0x400651: 0
+[hist_read_rec] 0x400655: 0
+[hist_read_rec] 0x400659: 0
+[hist_read_rec] 0x40065d: 0
+[hist_read_rec] 0x400661: 0
+[hist_read_rec] 0x400665: 0
+[hist_read_rec] 0x400669: 0
+[hist_read_rec] 0x40066d: 0
+[hist_read_rec] 0x400671: 0
+[hist_read_rec] 0x400675: 0
+[hist_read_rec] 0x400679: 0
+[hist_read_rec] 0x40067c: 0
+[hist_read_rec] 0x400680: 0
+[hist_read_rec] 0x400684: 0
+[hist_read_rec] 0x400688: 0
+[hist_read_rec] 0x40068c: 0
+[hist_read_rec] 0x400690: 0
+[hist_read_rec] 0x400694: 0
+[hist_read_rec] 0x400698: 0
+[hist_read_rec] 0x40069c: 0
+[hist_read_rec] 0x4006a0: 0
+[hist_read_rec] 0x4006a4: 102
+[hist_read_rec] 0x4006a8: 142
+[hist_read_rec] 0x4006ac: 335
+[hist_read_rec] 0x4006b0: 0
+[hist_read_rec] 0x4006b4: 0
+[hist_read_rec] 0x4006b8: 0
+[hist_read_rec] 0x4006bc: 0
+[hist_read_rec] 0x4006c0: 0
+[hist_read_rec] 0x4006c4: 0
+[hist_read_rec] 0x4006c8: 0
+[hist_read_rec] 0x4006cc: 0
+[hist_read_rec] 0x4006d0: 0
+[hist_read_rec] 0x4006d4: 6
+[hist_read_rec] 0x4006d8: 7
+[hist_read_rec] 0x4006dc: 16
+[hist_read_rec] 0x4006e0: 0
+[hist_read_rec] 0x4006e4: 0
+[hist_read_rec] 0x4006e7: 0
+[hist_read_rec] 0x4006eb: 0
+[hist_read_rec] 0x4006ef: 0
+[hist_read_rec] 0x4006f3: 0
+[hist_read_rec] 0x4006f7: 0
+[hist_read_rec] 0x4006fb: 0
+[hist_read_rec] 0x4006ff: 0
+[hist_read_rec] 0x400703: 0
+[hist_read_rec] 0x400707: 0
+[hist_read_rec] 0x40070b: 0
+[hist_read_rec] 0x40070f: 3
+[hist_read_rec] 0x400713: 3
+[hist_read_rec] 0x400717: 11
+[hist_read_rec] 0x40071b: 0
+[hist_read_rec] 0x40071f: 0
+[hist_read_rec] 0x400723: 0
+[hist_read_rec] 0x400727: 0
+[hist_read_rec] 0x40072b: 0
+[hist_read_rec] 0x40072f: 0
+[hist_read_rec] 0x400733: 0
+[hist_read_rec] 0x400737: 0
+[hist_read_rec] 0x40073b: 0
+[hist_read_rec] 0x40073f: 0
+[hist_read_rec] 0x400743: 0
+[hist_read_rec] 0x400747: 2
+[hist_read_rec] 0x40074b: 0
+[hist_read_rec] 0x40074e: 0
+[hist_read_rec] 0x400752: 0
+[hist_read_rec] 0x400756: 0
+[hist_read_rec] 0x40075a: 0
+[hist_read_rec] 0x40075e: 0
+[hist_read_rec] 0x400762: 0
+[hist_read_rec] 0x400766: 0
+[hist_read_rec] 0x40076a: 0
+[hist_read_rec] 0x40076e: 0
+[hist_read_rec] 0x400772: 0
+[hist_read_rec] 0x400776: 29
+[hist_read_rec] 0x40077a: 40
+[hist_read_rec] 0x40077e: 0
+[hist_read_rec] 0x400782: 93
+[hist_read_rec] 0x400786: 0
+[hist_read_rec] 0x40078a: 0
+[hist_read_rec] 0x40078e: 0
+[hist_read_rec] 0x400792: 0
+[hist_read_rec] 0x400796: 0
+[hist_read_rec] 0x40079a: 0
+[hist_read_rec] 0x40079e: 0
+[hist_read_rec] 0x4007a2: 0
+[hist_read_rec] 0x4007a6: 0
+[hist_read_rec] 0x4007aa: 0
+[hist_read_rec] 0x4007ae: 0
+[hist_read_rec] 0x4007b2: 0
+[hist_read_rec] 0x4007b6: 0
+[hist_read_rec] 0x4007b9: 0
+[hist_read_rec] 0x4007bd: 0
+[hist_read_rec] 0x4007c1: 0
+[hist_read_rec] 0x4007c5: 0
+[hist_read_rec] 0x4007c9: 0
+[hist_read_rec] 0x4007cd: 0
+[hist_read_rec] 0x4007d1: 0
+[hist_read_rec] 0x4007d5: 0
+[hist_read_rec] 0x4007d9: 0
+[hist_read_rec] 0x4007dd: 0
+[hist_read_rec] 0x4007e1: 0
+[hist_read_rec] 0x4007e5: 0
+[hist_read_rec] 0x4007e9: 0
+[hist_read_rec] 0x4007ed: 0
+[hist_read_rec] 0x4007f1: 0
+[hist_read_rec] 0x4007f5: 0
+[hist_read_rec] 0x4007f9: 0
+[hist_read_rec] 0x4007fd: 0
+[hist_read_rec] 0x400801: 0
+[hist_read_rec] 0x400805: 0
+[hist_read_rec] 0x400809: 0
+[hist_read_rec] 0x40080d: 0
+[hist_read_rec] 0x400811: 0
+[hist_read_rec] 0x400815: 0
+[hist_read_rec] 0x400819: 0
+[hist_read_rec] 0x40081d: 0
+[hist_read_rec] 0x400820: 0
+[hist_read_rec] 0x400824: 0
+[hist_read_rec] 0x400828: 0
+[hist_read_rec] 0x40082c: 0
+[hist_read_rec] 0x400830: 0
+[hist_read_rec] 0x400834: 0
+[hist_read_rec] 0x400838: 0
+[hist_read_rec] 0x40083c: 0
+[hist_read_rec] 0x400840: 0
+[hist_read_rec] 0x400844: 0
+[hist_read_rec] 0x400848: 0
+[hist_read_rec] 0x40084c: 0
+[hist_read_rec] 0x400850: 0
+[hist_read_rec] 0x400854: 0
+[hist_read_rec] 0x400858: 0
+[hist_read_rec] 0x40085c: 0
+[hist_read_rec] 0x400860: 0
+[hist_read_rec] 0x400864: 0
+[hist_read_rec] 0x400868: 0
+[hist_read_rec] 0x40086c: 0
+[hist_read_rec] 0x400870: 0
+[hist_read_rec] 0x400874: 0
+[hist_read_rec] 0x400878: 0
+[hist_read_rec] 0x40087c: 0
+[hist_read_rec] 0x400880: 0
+[hist_read_rec] 0x400884: 0
+[cg_read_rec] frompc 0x4006e0 selfpc 0x400693 count 2
+[sym_lookup] 3 probes (symtab->len=20)
+[sym_lookup] 4 probes (symtab->len=20)
+[cg_tally] arc from func4 to func5 traversed 2 times
+[arc_add] 2 arcs from func4 to func5
+[arc_lookup] parent func4 child func5
+[cg_read_rec] frompc 0x400700 selfpc 0x4006c3 count 1
+[sym_lookup] 4 probes (symtab->len=20)
+[sym_lookup] 3 probes (symtab->len=20)
+[cg_tally] arc from func3 to func4 traversed 1 times
+[arc_add] 1 arcs from func3 to func4
+[arc_lookup] parent func3 child func4
+[cg_read_rec] frompc 0x400750 selfpc 0x4006c3 count 1
+[sym_lookup] 1 probes (symtab->len=20)
+[sym_lookup] 3 probes (symtab->len=20)
+[cg_tally] arc from func2 to func4 traversed 1 times
+[arc_add] 1 arcs from func2 to func4
+[arc_lookup] parent func2 child func4
+[cg_read_rec] frompc 0x400750 selfpc 0x4006f8 count 1
+[sym_lookup] 1 probes (symtab->len=20)
+[sym_lookup] 4 probes (symtab->len=20)
+[cg_tally] arc from func2 to func3 traversed 1 times
+[arc_add] 1 arcs from func2 to func3
+[arc_lookup] parent func2 child func3
+[arc_lookup]	 parent func2 child func4
+[cg_read_rec] frompc 0x400780 selfpc 0x40072d count 1
+[sym_lookup] 5 probes (symtab->len=20)
+[sym_lookup] 1 probes (symtab->len=20)
+[cg_tally] arc from func1 to func2 traversed 1 times
+[arc_add] 1 arcs from func1 to func2
+[arc_lookup] parent func1 child func2
+[cg_read_rec] frompc 0x4007c0 selfpc 0x400693 count 1
+[sym_lookup] 4 probes (symtab->len=20)
+[sym_lookup] 4 probes (symtab->len=20)
+[cg_tally] arc from main to func5 traversed 1 times
+[arc_add] 1 arcs from main to func5
+[arc_lookup] parent main child func5
+[cg_read_rec] frompc 0x4007c0 selfpc 0x400767 count 1
+[sym_lookup] 4 probes (symtab->len=20)
+[sym_lookup] 5 probes (symtab->len=20)
+[cg_tally] arc from main to func1 traversed 1 times
+[arc_add] 1 arcs from main to func1
+[arc_lookup] parent main child func1
+[arc_lookup]	 parent main child func5
+
+
+Count is : 1
+[assign_samples] bin_low_pc=0x4006a4, bin_high_pc=0x4006a8, bin_count=102
+--->_start--->--->_init--->--->_start--->--->__gmon_start__--->--->deregister_tm_clones--->--->register_tm_clones--->--->__do_global_dtors_aux--->--->frame_dummy--->--->func5--->[assign_samples] [0x400686,0x4006b6) func5 gets 102.971429 ticks 2 overlap--->func4--->
+
+
+Count is : 2
+[assign_samples] bin_low_pc=0x4006a8, bin_high_pc=0x4006ac, bin_count=10
+--->func4--->--->func5--->[assign_samples] [0x400686,0x4006b6) func5 gets 10.095238 ticks 2 overlap--->func4--->
+
+
+Count is : 3
+[assign_samples] bin_low_pc=0x4006ac, bin_high_pc=0x4006b0, bin_count=335
+--->func4--->--->func5--->[assign_samples] [0x400686,0x4006b6) func5 gets 338.190476 ticks 2 overlap--->func4--->
+
+
+Count is : 4
+[assign_samples] bin_low_pc=0x4006d4, bin_high_pc=0x4006d8, bin_count=6
+--->func4--->--->func5--->--->func4--->[assign_samples] [0x4006b6,0x4006ea) func4 gets 6.057143 ticks 2 overlap--->func3--->
+
+
+Count is : 5
+[assign_samples] bin_low_pc=0x4006d8, bin_high_pc=0x4006dc, bin_count=7
+--->func3--->--->func4--->[assign_samples] [0x4006b6,0x4006ea) func4 gets 7.066667 ticks 2 overlap--->func3--->
+
+
+Count is : 6
+[assign_samples] bin_low_pc=0x4006dc, bin_high_pc=0x4006e0, bin_count=16
+--->func3--->--->func4--->[assign_samples] [0x4006b6,0x4006ea) func4 gets 16.152381 ticks 2 overlap--->func3--->
+
+
+Count is : 7
+[assign_samples] bin_low_pc=0x40070e, bin_high_pc=0x400712, bin_count=3
+--->func3--->--->func4--->--->func3--->[assign_samples] [0x4006eb,0x400720) func3 gets 3.028571 ticks 2 overlap--->func2--->
+
+
+Count is : 8
+[assign_samples] bin_low_pc=0x400712, bin_high_pc=0x400716, bin_count=3
+--->func2--->--->func3--->[assign_samples] [0x4006eb,0x400720) func3 gets 3.028571 ticks 2 overlap--->func2--->
+
+
+Count is : 9
+[assign_samples] bin_low_pc=0x400716, bin_high_pc=0x40071a, bin_count=11
+--->func2--->--->func3--->[assign_samples] [0x4006eb,0x400720) func3 gets 11.104762 ticks 2 overlap--->func2--->
+
+
+Count is : 10
+[assign_samples] bin_low_pc=0x400746, bin_high_pc=0x40074a, bin_count=2
+--->func2--->--->func3--->--->func2--->[assign_samples] [0x400720,0x40075a) func2 gets 2.019048 ticks 2 overlap--->func1--->
+
+
+Count is : 11
+[assign_samples] bin_low_pc=0x400776, bin_high_pc=0x40077a, bin_count=29
+--->func1--->--->func2--->--->func1--->[assign_samples] [0x40075a,0x40078e) func1 gets 29.276190 ticks 2 overlap--->main--->
+
+
+Count is : 12
+[assign_samples] bin_low_pc=0x40077a, bin_high_pc=0x40077e, bin_count=40
+--->main--->--->func1--->[assign_samples] [0x40075a,0x40078e) func1 gets 40.380952 ticks 2 overlap--->main--->
+
+
+Count is : 13
+[assign_samples] bin_low_pc=0x400782, bin_high_pc=0x400786, bin_count=93
+--->main--->--->func1--->[assign_samples] [0x40075a,0x40078e) func1 gets 93.885714 ticks 2 overlap--->main--->
+[assign_samples] total_time 654.000000
+[arc_lookup] parent _init child _init
+[arc_lookup] parent _start child _start
+[arc_lookup] parent __gmon_start__ child __gmon_start__
+[arc_lookup] parent deregister_tm_clones child deregister_tm_clones
+[arc_lookup] parent register_tm_clones child register_tm_clones
+[arc_lookup] parent __do_global_dtors_aux child __do_global_dtors_aux
+[arc_lookup] parent frame_dummy child frame_dummy
+[arc_lookup] parent func5 child func5
+[arc_lookup] parent func4 child func4
+[arc_lookup]	 parent func4 child func5
+[arc_lookup] parent func3 child func3
+[arc_lookup]	 parent func3 child func4
+[arc_lookup] parent func2 child func2
+[arc_lookup]	 parent func2 child func3
+[arc_lookup]	 parent func2 child func4
+[arc_lookup] parent func1 child func1
+[arc_lookup]	 parent func1 child func2
+[arc_lookup] parent main child main
+[arc_lookup]	 parent main child func1
+[arc_lookup]	 parent main child func5
+[arc_lookup] parent __libc_csu_init child __libc_csu_init
+[arc_lookup] parent __libc_csu_fini child __libc_csu_fini
+[arc_lookup] parent atexit child atexit
+[arc_lookup] parent _fini child _fini
+[arc_lookup] parent etext child etext
+[arc_lookup] parent __frame_dummy_init_array_entry child __frame_dummy_init_array_entry
+[arc_lookup] parent __do_global_dtors_aux_fini_array_entry child __do_global_dtors_aux_fini_array_entry
+[arc_lookup] parent data_start child data_start
+[dfn] dfn( _init{0}    0% )
+[pre_visit]		1:_init{-1}    0% 
+[post_visit]	1: _init{-1}    0% 
+[post_visit]		member _init{1}    0% -> cg.top_order = 1
+[dfn] dfn( _start{0}    0% )
+[pre_visit]		1:_start{-1}    0% 
+[post_visit]	1: _start{-1}    0% 
+[post_visit]		member _start{2}    0% -> cg.top_order = 2
+[dfn] dfn( __gmon_start__{0}    0% )
+[pre_visit]		1:__gmon_start__{-1}    0% 
+[post_visit]	1: __gmon_start__{-1}    0% 
+[post_visit]		member __gmon_start__{3}    0% -> cg.top_order = 3
+[dfn] dfn( deregister_tm_clones{0}    0% )
+[pre_visit]		1:deregister_tm_clones{-1}    0% 
+[post_visit]	1: deregister_tm_clones{-1}    0% 
+[post_visit]		member deregister_tm_clones{4}    0% -> cg.top_order = 4
+[dfn] dfn( register_tm_clones{0}    0% )
+[pre_visit]		1:register_tm_clones{-1}    0% 
+[post_visit]	1: register_tm_clones{-1}    0% 
+[post_visit]		member register_tm_clones{5}    0% -> cg.top_order = 5
+[dfn] dfn( __do_global_dtors_aux{0}    0% )
+[pre_visit]		1:__do_global_dtors_aux{-1}    0% 
+[post_visit]	1: __do_global_dtors_aux{-1}    0% 
+[post_visit]		member __do_global_dtors_aux{6}    0% -> cg.top_order = 6
+[dfn] dfn( frame_dummy{0}    0% )
+[pre_visit]		1:frame_dummy{-1}    0% 
+[post_visit]	1: frame_dummy{-1}    0% 
+[post_visit]		member frame_dummy{7}    0% -> cg.top_order = 7
+[dfn] dfn( func5{0}    0% )
+[pre_visit]		1:func5{-1}    0% 
+[post_visit]	1: func5{-1}    0% 
+[post_visit]		member func5{8}    0% -> cg.top_order = 8
+[dfn] dfn( func4{0}    0% )
+[pre_visit]		1:func4{-1}    0% 
+[dfn] dfn( func5{8}    0% )
+[post_visit]	1: func4{-1}    0% 
+[post_visit]		member func4{9}    0% -> cg.top_order = 9
+[dfn] dfn( func3{0}    0% )
+[pre_visit]		1:func3{-1}    0% 
+[dfn] dfn( func4{9}    0% )
+[post_visit]	1: func3{-1}    0% 
+[post_visit]		member func3{10}    0% -> cg.top_order = 10
+[dfn] dfn( func2{0}    0% )
+[pre_visit]		1:func2{-1}    0% 
+[dfn] dfn( func3{10}    0% )
+[dfn] dfn( func4{9}    0% )
+[post_visit]	1: func2{-1}    0% 
+[post_visit]		member func2{11}    0% -> cg.top_order = 11
+[dfn] dfn( func1{0}    0% )
+[pre_visit]		1:func1{-1}    0% 
+[dfn] dfn( func2{11}    0% )
+[post_visit]	1: func1{-1}    0% 
+[post_visit]		member func1{12}    0% -> cg.top_order = 12
+[dfn] dfn( main{0}    0% )
+[pre_visit]		1:main{-1}    0% 
+[dfn] dfn( func1{12}    0% )
+[dfn] dfn( func5{8}    0% )
+[post_visit]	1: main{-1}    0% 
+[post_visit]		member main{13}    0% -> cg.top_order = 13
+[dfn] dfn( __libc_csu_init{0}    0% )
+[pre_visit]		1:__libc_csu_init{-1}    0% 
+[post_visit]	1: __libc_csu_init{-1}    0% 
+[post_visit]		member __libc_csu_init{14}    0% -> cg.top_order = 14
+[dfn] dfn( __libc_csu_fini{0}    0% )
+[pre_visit]		1:__libc_csu_fini{-1}    0% 
+[post_visit]	1: __libc_csu_fini{-1}    0% 
+[post_visit]		member __libc_csu_fini{15}    0% -> cg.top_order = 15
+[dfn] dfn( atexit{0}    0% )
+[pre_visit]		1:atexit{-1}    0% 
+[post_visit]	1: atexit{-1}    0% 
+[post_visit]		member atexit{16}    0% -> cg.top_order = 16
+[dfn] dfn( _fini{0}    0% )
+[pre_visit]		1:_fini{-1}    0% 
+[post_visit]	1: _fini{-1}    0% 
+[post_visit]		member _fini{17}    0% -> cg.top_order = 17
+[dfn] dfn( etext{0}    0% )
+[pre_visit]		1:etext{-1}    0% 
+[post_visit]	1: etext{-1}    0% 
+[post_visit]		member etext{18}    0% -> cg.top_order = 18
+[dfn] dfn( __frame_dummy_init_array_entry{0}    0% )
+[pre_visit]		1:__frame_dummy_init_array_entry{-1}    0% 
+[post_visit]	1: __frame_dummy_init_array_entry{-1}    0% 
+[post_visit]		member __frame_dummy_init_array_entry{19}    0% -> cg.top_order = 19
+[dfn] dfn( __do_global_dtors_aux_fini_array_entry{0}    0% )
+[pre_visit]		1:__do_global_dtors_aux_fini_array_entry{-1}    0% 
+[post_visit]	1: __do_global_dtors_aux_fini_array_entry{-1}    0% 
+[post_visit]		member __do_global_dtors_aux_fini_array_entry{20}    0% -> cg.top_order = 20
+[dfn] dfn( data_start{0}    0% )
+[pre_visit]		1:data_start{-1}    0% 
+[post_visit]	1: data_start{-1}    0% 
+[post_visit]		member data_start{21}    0% -> cg.top_order = 21
+[cg_assemble] topological sort listing
+[cg_assemble] 1:_init{1}    0% 
+[cg_assemble] 2:_start{2}    0% 
+[cg_assemble] 3:__gmon_start__{3}    0% 
+[cg_assemble] 4:deregister_tm_clones{4}    0% 
+[cg_assemble] 5:register_tm_clones{5}    0% 
+[cg_assemble] 6:__do_global_dtors_aux{6}    0% 
+[cg_assemble] 7:frame_dummy{7}    0% 
+[cg_assemble] 8:func5{8}    0% 
+[cg_assemble] 9:func4{9}    0% 
+[cg_assemble] 10:func3{10}    0% 
+[cg_assemble] 11:func2{11}    0% 
+[cg_assemble] 12:func1{12}    0% 
+[cg_assemble] 13:main{13}    0% 
+[cg_assemble] 14:__libc_csu_init{14}    0% 
+[cg_assemble] 15:__libc_csu_fini{15}    0% 
+[cg_assemble] 16:atexit{16}    0% 
+[cg_assemble] 17:_fini{17}    0% 
+[cg_assemble] 18:etext{18}    0% 
+[cg_assemble] 19:__frame_dummy_init_array_entry{19}    0% 
+[cg_assemble] 20:__do_global_dtors_aux_fini_array_entry{20}    0% 
+[cg_assemble] 21:data_start{21}    0% 
+[prop_flags] data_start{21}    0% inherits print-flag 0 and prop-fract 0.000000
+[prop_flags] data_start{21}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 0.000000 propself 0.000000 print_time 0.000000
+[prop_flags] __do_global_dtors_aux_fini_array_entry{20}    0% inherits print-flag 0 and prop-fract 0.000000
+[prop_flags] __do_global_dtors_aux_fini_array_entry{20}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 0.000000 propself 0.000000 print_time 0.000000
+[prop_flags] __frame_dummy_init_array_entry{19}    0% inherits print-flag 0 and prop-fract 0.000000
+[prop_flags] __frame_dummy_init_array_entry{19}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 0.000000 propself 0.000000 print_time 0.000000
+[prop_flags] etext{18}    0% inherits print-flag 0 and prop-fract 0.000000
+[prop_flags] etext{18}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 0.000000 propself 0.000000 print_time 0.000000
+[prop_flags] _fini{17}    0% inherits print-flag 0 and prop-fract 0.000000
+[prop_flags] _fini{17}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 0.000000 propself 0.000000 print_time 0.000000
+[prop_flags] atexit{16}    0% inherits print-flag 0 and prop-fract 0.000000
+[prop_flags] atexit{16}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 0.000000 propself 0.000000 print_time 0.000000
+[prop_flags] __libc_csu_fini{15}    0% inherits print-flag 0 and prop-fract 0.000000
+[prop_flags] __libc_csu_fini{15}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 0.000000 propself 0.000000 print_time 0.000000
+[prop_flags] __libc_csu_init{14}    0% inherits print-flag 0 and prop-fract 0.000000
+[prop_flags] __libc_csu_init{14}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 0.000000 propself 0.000000 print_time 0.000000
+[prop_flags] main{13}    0% inherits print-flag 0 and prop-fract 0.000000
+[prop_flags] main{13}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 0.000000 propself 0.000000 print_time 0.000000
+[prop_flags] func1{12}  100% inherits print-flag 1 and prop-fract 1.000000
+[prop_flags] func1{12}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 163.542857 propself 163.542857 print_time 163.542857
+[prop_flags] func2{11}  100% inherits print-flag 1 and prop-fract 1.000000
+[prop_flags] func2{11}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 2.019048 propself 2.019048 print_time 165.561905
+[prop_flags] func3{10}  100% inherits print-flag 1 and prop-fract 1.000000
+[prop_flags] func3{10}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 17.161905 propself 17.161905 print_time 182.723810
+[prop_flags] func4{9}  100% inherits print-flag 1 and prop-fract 1.000000
+[prop_flags] func4{9}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 29.276190 propself 29.276190 print_time 212.000000
+[prop_flags] func5{8}  100% inherits print-flag 1 and prop-fract 1.000000
+[prop_flags] func5{8}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 451.257143 propself 451.257143 print_time 663.257143
+[prop_flags] frame_dummy{7}    0% inherits print-flag 0 and prop-fract 0.000000
+[prop_flags] frame_dummy{7}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 0.000000 propself 0.000000 print_time 663.257143
+[prop_flags] __do_global_dtors_aux{6}    0% inherits print-flag 0 and prop-fract 0.000000
+[prop_flags] __do_global_dtors_aux{6}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 0.000000 propself 0.000000 print_time 663.257143
+[prop_flags] register_tm_clones{5}    0% inherits print-flag 0 and prop-fract 0.000000
+[prop_flags] register_tm_clones{5}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 0.000000 propself 0.000000 print_time 663.257143
+[prop_flags] deregister_tm_clones{4}    0% inherits print-flag 0 and prop-fract 0.000000
+[prop_flags] deregister_tm_clones{4}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 0.000000 propself 0.000000 print_time 663.257143
+[prop_flags] __gmon_start__{3}    0% inherits print-flag 0 and prop-fract 0.000000
+[prop_flags] __gmon_start__{3}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 0.000000 propself 0.000000 print_time 663.257143
+[prop_flags] _start{2}    0% inherits print-flag 0 and prop-fract 0.000000
+[prop_flags] _start{2}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 0.000000 propself 0.000000 print_time 663.257143
+[prop_flags] _init{1}    0% inherits print-flag 0 and prop-fract 0.000000
+[prop_flags] _init{1}  100%  ends up with printflag 1 and prop-fract 1.000000
+[prop_flags] time 0.000000 propself 0.000000 print_time 663.257143
+Shubhendra[prop_time] child 	func5{8}  100%  with 451.257143 0.000000 2/3
+[prop_time] parent	func4{9}  100% 
+[prop_time] share 300.838095
+Shubhendra[prop_time] child 	func4{9}  100%  with 29.276190 300.838095 1/2
+[prop_time] parent	func3{10}  100% 
+[prop_time] share 165.057143
+Shubhendra[prop_time] child 	func3{10}  100%  with 17.161905 165.057143 1/1
+[prop_time] parent	func2{11}  100% 
+[prop_time] share 182.219048
+Shubhendra[prop_time] child 	func4{9}  100%  with 29.276190 300.838095 1/2
+[prop_time] parent	func2{11}  100% 
+[prop_time] share 165.057143
+Shubhendra[prop_time] child 	func2{11}  100%  with 2.019048 347.276190 1/1
+[prop_time] parent	func1{12}  100% 
+[prop_time] share 349.295238
+Shubhendra[prop_time] child 	func1{12}  100%  with 163.542857 349.295238 1/1
+[prop_time] parent	main{13}  100% 
+[prop_time] share 512.838095
+Shubhendra[prop_time] child 	func5{8}  100%  with 451.257143 0.000000 1/3
+[prop_time] parent	main{13}  100% 
+[prop_time] share 150.419048
 Flat profile:
 
 Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
  time   seconds   seconds    calls   s/call   s/call  name    
- 72.78      5.45     5.45        3     1.82     1.82  func5
- 21.83      7.09     1.64        1     1.64     5.74  func1
-  4.04      7.39     0.30        2     0.15     1.97  func4
-  2.16      7.55     0.16        1     0.16     2.13  func3
-  0.13      7.56     0.01        1     0.01     4.11  func2
+ 68.68      4.51     4.51        3     1.50     1.50  func5{8}  100% 
+ 24.89      6.15     1.64        1     1.64     5.13  func1{12}  100% 
+  4.46      6.44     0.29        2     0.15     1.65  func4{9}  100% 
+  2.61      6.61     0.17        1     0.17     1.82  func3{10}  100% 
+  0.31      6.63     0.02        1     0.02     3.49  func2{11}  100% 
 
  %         the percentage of the total running time of the
 time       program used by this function.
@@ -45,35 +806,47 @@ notice and this notice are preserved.
 		     Call graph (explanation follows)
 
 
-granularity: each sample hit covers 2 byte(s) for 0.13% of 7.56 seconds
+granularity: each sample hit covers 2 byte(s) for 0.15% of 6.63 seconds
 
 index % time    self  children    called     name
                                                  <spontaneous>
-[1]    100.0    0.00    7.56                 main [1]
-                1.64    4.11       1/1           func1 [2]
-                1.82    0.00       1/3           func5 [3]
+[1]    100.0    0.00    6.63                 main{13}  100%  [1]
+[cmp_arc] main{13}  100%  [1] calls func5{8}  100%  [3] 150.419048 + 0.000000 1/3
+[cmp_arc] main{13}  100%  [1] calls func1{12}  100%  [2] 163.542857 + 349.295238 1/1
+
+                1.64    3.49       1/1           func1{12}  100%  [2]
+                1.50    0.00       1/3           func5{8}  100%  [3]
 -----------------------------------------------
-                1.64    4.11       1/1           main [1]
-[2]     76.0    1.64    4.11       1         func1 [2]
-                0.01    4.10       1/1           func2 [4]
+                1.64    3.49       1/1           main{13}  100%  [1]
+[2]     77.3    1.64    3.49       1         func1{12}  100%  [2]
+                0.02    3.47       1/1           func2{11}  100%  [4]
 -----------------------------------------------
-                1.82    0.00       1/3           main [1]
-                3.63    0.00       2/3           func4 [5]
-[3]     72.1    5.45    0.00       3         func5 [3]
+[cmp_arc] func4{9}  100%  [5] calls func5{8}  100%  [3] 300.838095 + 0.000000 2/3
+[cmp_arc] main{13}  100%  [1] calls func5{8}  100%  [3] 150.419048 + 0.000000 1/3
+
+                1.50    0.00       1/3           main{13}  100%  [1]
+                3.01    0.00       2/3           func4{9}  100%  [5]
+[3]     68.0    4.51    0.00       3         func5{8}  100%  [3]
 -----------------------------------------------
-                0.01    4.10       1/1           func1 [2]
-[4]     54.3    0.01    4.10       1         func2 [4]
-                0.16    1.97       1/1           func3 [6]
-                0.15    1.82       1/2           func4 [5]
+                0.02    3.47       1/1           func1{12}  100%  [2]
+[4]     52.7    0.02    3.47       1         func2{11}  100%  [4]
+[cmp_arc] func2{11}  100%  [4] calls func4{9}  100%  [5] 14.638095 + 150.419048 1/2
+[cmp_arc] func2{11}  100%  [4] calls func3{10}  100%  [6] 17.161905 + 165.057143 1/1
+
+                0.17    1.65       1/1           func3{10}  100%  [6]
+                0.15    1.50       1/2           func4{9}  100%  [5]
 -----------------------------------------------
-                0.15    1.82       1/2           func3 [6]
-                0.15    1.82       1/2           func2 [4]
-[5]     52.1    0.30    3.63       2         func4 [5]
-                3.63    0.00       2/3           func5 [3]
+[cmp_arc] func3{10}  100%  [6] calls func4{9}  100%  [5] 14.638095 + 150.419048 1/2
+[cmp_arc] func2{11}  100%  [4] calls func4{9}  100%  [5] 14.638095 + 150.419048 1/2
+
+                0.15    1.50       1/2           func3{10}  100%  [6]
+                0.15    1.50       1/2           func2{11}  100%  [4]
+[5]     49.8    0.29    3.01       2         func4{9}  100%  [5]
+                3.01    0.00       2/3           func5{8}  100%  [3]
 -----------------------------------------------
-                0.16    1.97       1/1           func2 [4]
-[6]     28.2    0.16    1.97       1         func3 [6]
-                0.15    1.82       1/2           func4 [5]
+                0.17    1.65       1/1           func2{11}  100%  [4]
+[6]     27.5    0.17    1.65       1         func3{10}  100%  [6]
+                0.15    1.50       1/2           func4{9}  100%  [5]
 -----------------------------------------------
 
  This table describes the call tree of the program, and was sorted by
@@ -166,5 +939,5 @@ notice and this notice are preserved.
 
 Index by function name
 
-   [2] func1                   [6] func3                   [3] func5
-   [4] func2                   [5] func4
+   [2] func1{12}  100%                    [6] func3{10}  100%                    [3] func5{8}  100% 
+   [4] func2{11}  100%                    [5] func4{9}  100% 
