@@ -47,6 +47,8 @@ extern void flat_blurb (FILE * fp);
 
 static histogram *find_histogram (bfd_vma lowpc, bfd_vma highpc);
 static histogram *find_histogram_for_pc (bfd_vma pc);
+static void
+print_function (Sym *sym, double scale);
 
 histogram * histograms;
 unsigned num_histograms;
@@ -507,7 +509,7 @@ print_header (int prefix)
 	  _("time"), hist_dimension, hist_dimension, _("calls"), unit, unit,
 	  _("name"));
 }
-
+float tot = 0;
 
 static void
 print_line (Sym *sym, double scale)
@@ -536,10 +538,29 @@ print_line (Sym *sym, double scale)
 	    print_name (sym);
 	  else
 	    print_name_only (sym);
-
-	  printf ("\n");
+    printf ("\n");
+    tot+=scale * sym->hist.time / hz;
 	
 }
+
+int a[][300];
+int size1[4] = {0,0,0,0}; 
+//shubhendra modification
+static void
+print_function (Sym *sym, double scale)
+{
+    float total_function =scale * (sym->hist.time + sym->cg.child_time) / (hz * tot);
+    for(int i=3;i>=0;i--) {
+      float y = 2*(i+1);
+      float z = (y-1)/y;
+      if(total_function >= z ) {
+        printf("Iteration is :%d, Ratio Time taken : %f Index is:  %d\n",i,total_function, sym->cg.index);
+        break;
+      }
+    }
+  
+}
+
 
 
 /* Compare LP and RP.  The primary comparison key is execution time,
@@ -670,7 +691,22 @@ hist_print (void)
 	  || (syms[INCL_FLAT].len == 0
 	      && !sym_lookup (&syms[EXCL_FLAT], addr)))
 	print_line (time_sorted_syms[sym_index], SItab[log_scale].scale);
+  }
+
+  printf("Tot is: %f\n",tot );
+
+  for (sym_index = 0; sym_index < symtab.len; ++sym_index) {
+  if (sym_lookup (&syms[INCL_FLAT], addr)
+    || (syms[INCL_FLAT].len == 0
+        && !sym_lookup (&syms[EXCL_FLAT], addr))) 
+  print_function(time_sorted_syms[sym_index], SItab[log_scale].scale);
     }
+
+    /*for(int i=0;i<4;i++) {
+      for(int j=0;j<size1[i];j++) {
+        printf("The functions that belong to the %d are : %d\n",i,a[i][j]);
+      }
+    }*/
 
   free (time_sorted_syms);
 
