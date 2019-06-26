@@ -1,0 +1,358 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 51.64      0.63     0.63   457926     0.00     0.00  Minisat::Solver::analyze(unsigned int, Minisat::vec<Minisat::Lit, int>&, int&)
+ 20.49      0.88     0.25  1014096     0.00     0.00  Minisat::Solver::propagate()
+ 11.48      1.02     0.14  4411793     0.00     0.00  Minisat::Solver::litRedundant(Minisat::Lit)
+  9.02      1.13     0.11   458948     0.00     0.00  Minisat::Solver::~Solver()
+  6.56      1.21     0.08   553019     0.00     0.00  Minisat::Solver::pickBranchLit()
+  0.82      1.22     0.01   459033     0.00     0.00  Minisat::Solver::attachClause(unsigned int)
+  0.00      1.22     0.00   456472     0.00     0.00  Minisat::Solver::removeClause(unsigned int)
+  0.00      1.22     0.00     1107     0.00     0.00  Minisat::Solver::addClause_(Minisat::vec<Minisat::Lit, int>&)
+  0.00      1.22     0.00     1023     0.00     0.00  Minisat::Solver::simplify()
+  0.00      1.22     0.00     1022     0.00     0.00  Minisat::Solver::search(int)
+  0.00      1.22     0.00     1001     0.00     0.00  Minisat::vec<Minisat::Option*, int>::push(Minisat::Option* const&)
+  0.00      1.22     0.00      566     0.00     0.00  Minisat::SimpSolver::garbageCollect()
+  0.00      1.22     0.00      566     0.00     0.00  Minisat::Solver::relocAll(Minisat::ClauseAllocator&)
+  0.00      1.22     0.00      565     0.00     0.00  void Minisat::sort<unsigned int, reduceDB_lt>(unsigned int*, int, reduceDB_lt)
+  0.00      1.22     0.00      565     0.00     0.00  Minisat::Solver::reduceDB()
+  0.00      1.22     0.00      250     0.00     0.00  Minisat::SimpSolver::eliminateVar(int)
+  0.00      1.22     0.00      250     0.00     0.00  Minisat::Solver::newVar(Minisat::lbool, bool)
+  0.00      1.22     0.00       48     0.00     0.00  Minisat::SimpSolver::removeClause(unsigned int)
+  0.00      1.22     0.00       42     0.00     0.00  Minisat::SimpSolver::addClause_(Minisat::vec<Minisat::Lit, int>&)
+  0.00      1.22     0.00       42     0.00     0.00  Minisat::SimpSolver::merge(Minisat::Clause const&, Minisat::Clause const&, int, Minisat::vec<Minisat::Lit, int>&)
+  0.00      1.22     0.00       10     0.00     0.00  mkElimClause(Minisat::vec<unsigned int, int>&, int, Minisat::Clause&)
+  0.00      1.22     0.00       10     0.00     0.00  Minisat::IntOption::parse(char const*)
+  0.00      1.22     0.00        9     0.00     0.00  Minisat::SimpSolver::backwardSubsumptionCheck(bool)
+  0.00      1.22     0.00        8     0.00     0.00  Minisat::BoolOption::parse(char const*)
+  0.00      1.22     0.00        7     0.00     0.00  Minisat::DoubleOption::parse(char const*)
+  0.00      1.22     0.00        2     0.00     0.00  Minisat::Solver::rebuildOrderHeap()
+  0.00      1.22     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN7Minisat10SimpSolverC2Ev
+  0.00      1.22     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN7Minisat6SolverC2Ev
+  0.00      1.22     0.00        1     0.00     0.00  _GLOBAL__sub_I_elapsed_t0
+  0.00      1.22     0.00        1     0.00     0.00  memReadPeak()
+  0.00      1.22     0.00        1     0.00     0.00  Minisat::SimpSolver::~SimpSolver()
+  0.00      1.22     0.00        1     0.00     0.00  Minisat::memUsedPeak(bool)
+  0.00      1.22     0.00        1     0.00     0.00  Minisat::StringOption::parse(char const*)
+  0.00      1.22     0.00        1     0.00     0.00  Minisat::RegionAllocator<unsigned int>::alloc(int)
+  0.00      1.22     0.00        1     0.00     0.00  Minisat::Solver::removeSatisfied(Minisat::vec<unsigned int, int>&)
+  0.00      1.22     0.00        1     0.00     1.22  Minisat::Solver::solve_()
+  0.00      1.22     0.00        1     0.00     0.00  Minisat::Solver::Solver()
+Tot is: 1.220127
+Iteration is :0, Ratio Time taken : 0.631148 Index is:  4
+Iteration is :3, Ratio Time taken : 0.999776 Index is:  3
+Iteration is :3, Ratio Time taken : 0.999776 Index is:  1
+Iteration is :3, Ratio Time taken : 0.999776 Index is:  2
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.82% of 1.22 seconds
+
+index % time    self  children    called     name
+                0.00    1.22       1/1           Minisat::SimpSolver::solve_(bool, bool) [2]
+[1]    100.0    0.00    1.22       1         Minisat::Solver::solve_() [1]
+                0.00    1.22    1022/1022        Minisat::Solver::search(int) [3]
+                0.00    0.00       1/458948      Minisat::Solver::~Solver() [7]
+                0.00    0.00       1/1001        Minisat::vec<Minisat::Option*, int>::push(Minisat::Option* const&) [23]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]    100.0    0.00    1.22                 Minisat::SimpSolver::solve_(bool, bool) [2]
+                0.00    1.22       1/1           Minisat::Solver::solve_() [1]
+-----------------------------------------------
+                0.00    1.22    1022/1022        Minisat::Solver::solve_() [1]
+[3]    100.0    0.00    1.22    1022         Minisat::Solver::search(int) [3]
+                0.63    0.14  457926/457926      Minisat::Solver::analyze(unsigned int, Minisat::vec<Minisat::Lit, int>&, int&) [4]
+                0.25    0.00 1011966/1014096     Minisat::Solver::propagate() [5]
+                0.11    0.00  458947/458948      Minisat::Solver::~Solver() [7]
+                0.08    0.00  553019/553019      Minisat::Solver::pickBranchLit() [8]
+                0.01    0.00  457926/459033      Minisat::Solver::attachClause(unsigned int) [9]
+                0.00    0.00    1022/1023        Minisat::Solver::simplify() [13]
+                0.00    0.00     565/566         Minisat::SimpSolver::garbageCollect() [24]
+                0.00    0.00     565/565         Minisat::Solver::reduceDB() [27]
+-----------------------------------------------
+                0.63    0.14  457926/457926      Minisat::Solver::search(int) [3]
+[4]     63.1    0.63    0.14  457926         Minisat::Solver::analyze(unsigned int, Minisat::vec<Minisat::Lit, int>&, int&) [4]
+                0.14    0.00 4411793/4411793     Minisat::Solver::litRedundant(Minisat::Lit) [6]
+-----------------------------------------------
+                0.00    0.00    1023/1014096     Minisat::Solver::simplify() [13]
+                0.00    0.00    1107/1014096     Minisat::SimpSolver::addClause_(Minisat::vec<Minisat::Lit, int>&) [12]
+                0.25    0.00 1011966/1014096     Minisat::Solver::search(int) [3]
+[5]     20.5    0.25    0.00 1014096         Minisat::Solver::propagate() [5]
+                0.00    0.00    1107/459033      Minisat::Solver::attachClause(unsigned int) [9]
+-----------------------------------------------
+                0.14    0.00 4411793/4411793     Minisat::Solver::analyze(unsigned int, Minisat::vec<Minisat::Lit, int>&, int&) [4]
+[6]     11.5    0.14    0.00 4411793         Minisat::Solver::litRedundant(Minisat::Lit) [6]
+-----------------------------------------------
+                0.00    0.00       1/458948      Minisat::Solver::solve_() [1]
+                0.11    0.00  458947/458948      Minisat::Solver::search(int) [3]
+[7]      9.0    0.11    0.00  458948         Minisat::Solver::~Solver() [7]
+-----------------------------------------------
+                0.08    0.00  553019/553019      Minisat::Solver::search(int) [3]
+[8]      6.6    0.08    0.00  553019         Minisat::Solver::pickBranchLit() [8]
+-----------------------------------------------
+                0.00    0.00    1107/459033      Minisat::Solver::propagate() [5]
+                0.01    0.00  457926/459033      Minisat::Solver::search(int) [3]
+[9]      0.8    0.01    0.00  459033         Minisat::Solver::attachClause(unsigned int) [9]
+-----------------------------------------------
+                                                 <spontaneous>
+[10]     0.0    0.00    0.00                 Minisat::SimpSolver::eliminate(bool) [10]
+                0.00    0.00     250/250         Minisat::SimpSolver::eliminateVar(int) [11]
+                0.00    0.00       1/1023        Minisat::Solver::simplify() [13]
+                0.00    0.00       2/10          mkElimClause(Minisat::vec<unsigned int, int>&, int, Minisat::Clause&) [31]
+                0.00    0.00       2/9           Minisat::SimpSolver::backwardSubsumptionCheck(bool) [33]
+                0.00    0.00       1/566         Minisat::SimpSolver::garbageCollect() [24]
+                0.00    0.00       1/2           Minisat::Solver::rebuildOrderHeap() [36]
+                0.00    0.00       1/1           Minisat::SimpSolver::~SimpSolver() [41]
+-----------------------------------------------
+                0.00    0.00     250/250         Minisat::SimpSolver::eliminate(bool) [10]
+[11]     0.0    0.00    0.00     250         Minisat::SimpSolver::eliminateVar(int) [11]
+                0.00    0.00      42/42          Minisat::SimpSolver::addClause_(Minisat::vec<Minisat::Lit, int>&) [12]
+                0.00    0.00      48/456472      Minisat::Solver::removeClause(unsigned int) [21]
+                0.00    0.00      48/48          Minisat::SimpSolver::removeClause(unsigned int) [29]
+                0.00    0.00      42/42          Minisat::SimpSolver::merge(Minisat::Clause const&, Minisat::Clause const&, int, Minisat::vec<Minisat::Lit, int>&) [30]
+                0.00    0.00       8/10          mkElimClause(Minisat::vec<unsigned int, int>&, int, Minisat::Clause&) [31]
+                0.00    0.00       7/9           Minisat::SimpSolver::backwardSubsumptionCheck(bool) [33]
+-----------------------------------------------
+                0.00    0.00      42/42          Minisat::SimpSolver::eliminateVar(int) [11]
+[12]     0.0    0.00    0.00      42         Minisat::SimpSolver::addClause_(Minisat::vec<Minisat::Lit, int>&) [12]
+                0.00    0.00    1107/1014096     Minisat::Solver::propagate() [5]
+                0.00    0.00    1107/1107        Minisat::Solver::addClause_(Minisat::vec<Minisat::Lit, int>&) [22]
+-----------------------------------------------
+                0.00    0.00       1/1023        Minisat::SimpSolver::eliminate(bool) [10]
+                0.00    0.00    1022/1023        Minisat::Solver::search(int) [3]
+[13]     0.0    0.00    0.00    1023         Minisat::Solver::simplify() [13]
+                0.00    0.00    1023/1014096     Minisat::Solver::propagate() [5]
+                0.00    0.00       1/1           Minisat::Solver::removeSatisfied(Minisat::vec<unsigned int, int>&) [45]
+                0.00    0.00       1/2           Minisat::Solver::rebuildOrderHeap() [36]
+-----------------------------------------------
+                0.00    0.00      48/456472      Minisat::SimpSolver::eliminateVar(int) [11]
+                0.00    0.00  456424/456472      Minisat::Solver::reduceDB() [27]
+[21]     0.0    0.00    0.00  456472         Minisat::Solver::removeClause(unsigned int) [21]
+-----------------------------------------------
+                0.00    0.00    1107/1107        Minisat::SimpSolver::addClause_(Minisat::vec<Minisat::Lit, int>&) [12]
+[22]     0.0    0.00    0.00    1107         Minisat::Solver::addClause_(Minisat::vec<Minisat::Lit, int>&) [22]
+-----------------------------------------------
+                0.00    0.00       1/1001        Minisat::Solver::solve_() [1]
+                0.00    0.00    1000/1001        Minisat::Solver::newVar(Minisat::lbool, bool) [28]
+[23]     0.0    0.00    0.00    1001         Minisat::vec<Minisat::Option*, int>::push(Minisat::Option* const&) [23]
+-----------------------------------------------
+                0.00    0.00       1/566         Minisat::SimpSolver::eliminate(bool) [10]
+                0.00    0.00     565/566         Minisat::Solver::search(int) [3]
+[24]     0.0    0.00    0.00     566         Minisat::SimpSolver::garbageCollect() [24]
+                0.00    0.00     566/566         Minisat::Solver::relocAll(Minisat::ClauseAllocator&) [25]
+-----------------------------------------------
+                0.00    0.00     566/566         Minisat::SimpSolver::garbageCollect() [24]
+[25]     0.0    0.00    0.00     566         Minisat::Solver::relocAll(Minisat::ClauseAllocator&) [25]
+-----------------------------------------------
+                              114132             void Minisat::sort<unsigned int, reduceDB_lt>(unsigned int*, int, reduceDB_lt) [26]
+                0.00    0.00     565/565         Minisat::Solver::reduceDB() [27]
+[26]     0.0    0.00    0.00     565+114132  void Minisat::sort<unsigned int, reduceDB_lt>(unsigned int*, int, reduceDB_lt) [26]
+                              114132             void Minisat::sort<unsigned int, reduceDB_lt>(unsigned int*, int, reduceDB_lt) [26]Printing the child
+-----------------------------------------------
+                0.00    0.00     565/565         Minisat::Solver::search(int) [3]
+[27]     0.0    0.00    0.00     565         Minisat::Solver::reduceDB() [27]
+                0.00    0.00  456424/456472      Minisat::Solver::removeClause(unsigned int) [21]
+                0.00    0.00     565/565         void Minisat::sort<unsigned int, reduceDB_lt>(unsigned int*, int, reduceDB_lt) [26]
+-----------------------------------------------
+                0.00    0.00     250/250         Minisat::SimpSolver::newVar(Minisat::lbool, bool) [59]
+[28]     0.0    0.00    0.00     250         Minisat::Solver::newVar(Minisat::lbool, bool) [28]
+                0.00    0.00    1000/1001        Minisat::vec<Minisat::Option*, int>::push(Minisat::Option* const&) [23]
+-----------------------------------------------
+                0.00    0.00      48/48          Minisat::SimpSolver::eliminateVar(int) [11]
+[29]     0.0    0.00    0.00      48         Minisat::SimpSolver::removeClause(unsigned int) [29]
+-----------------------------------------------
+                0.00    0.00      42/42          Minisat::SimpSolver::eliminateVar(int) [11]
+[30]     0.0    0.00    0.00      42         Minisat::SimpSolver::merge(Minisat::Clause const&, Minisat::Clause const&, int, Minisat::vec<Minisat::Lit, int>&) [30]
+-----------------------------------------------
+                0.00    0.00       2/10          Minisat::SimpSolver::eliminate(bool) [10]
+                0.00    0.00       8/10          Minisat::SimpSolver::eliminateVar(int) [11]
+[31]     0.0    0.00    0.00      10         mkElimClause(Minisat::vec<unsigned int, int>&, int, Minisat::Clause&) [31]
+-----------------------------------------------
+                0.00    0.00      10/10          Minisat::parseOptions(int&, char**, bool) [72]
+[32]     0.0    0.00    0.00      10         Minisat::IntOption::parse(char const*) [32]
+-----------------------------------------------
+                0.00    0.00       2/9           Minisat::SimpSolver::eliminate(bool) [10]
+                0.00    0.00       7/9           Minisat::SimpSolver::eliminateVar(int) [11]
+[33]     0.0    0.00    0.00       9         Minisat::SimpSolver::backwardSubsumptionCheck(bool) [33]
+-----------------------------------------------
+                0.00    0.00       8/8           Minisat::parseOptions(int&, char**, bool) [72]
+[34]     0.0    0.00    0.00       8         Minisat::BoolOption::parse(char const*) [34]
+-----------------------------------------------
+                0.00    0.00       7/7           Minisat::parseOptions(int&, char**, bool) [72]
+[35]     0.0    0.00    0.00       7         Minisat::DoubleOption::parse(char const*) [35]
+-----------------------------------------------
+                0.00    0.00       1/2           Minisat::Solver::simplify() [13]
+                0.00    0.00       1/2           Minisat::SimpSolver::eliminate(bool) [10]
+[36]     0.0    0.00    0.00       2         Minisat::Solver::rebuildOrderHeap() [36]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [106]
+[37]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN7Minisat10SimpSolverC2Ev [37]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [106]
+[38]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN7Minisat6SolverC2Ev [38]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [106]
+[39]     0.0    0.00    0.00       1         _GLOBAL__sub_I_elapsed_t0 [39]
+-----------------------------------------------
+                0.00    0.00       1/1           Minisat::memUsedPeak(bool) [42]
+[40]     0.0    0.00    0.00       1         memReadPeak() [40]
+-----------------------------------------------
+                0.00    0.00       1/1           Minisat::SimpSolver::eliminate(bool) [10]
+[41]     0.0    0.00    0.00       1         Minisat::SimpSolver::~SimpSolver() [41]
+-----------------------------------------------
+                0.00    0.00       1/1           Minisat::Solver::printStats() const [98]
+[42]     0.0    0.00    0.00       1         Minisat::memUsedPeak(bool) [42]
+                0.00    0.00       1/1           memReadPeak() [40]
+-----------------------------------------------
+                0.00    0.00       1/1           Minisat::parseOptions(int&, char**, bool) [72]
+[43]     0.0    0.00    0.00       1         Minisat::StringOption::parse(char const*) [43]
+-----------------------------------------------
+                0.00    0.00       1/1           Minisat::SimpSolver::SimpSolver() [63]
+[44]     0.0    0.00    0.00       1         Minisat::RegionAllocator<unsigned int>::alloc(int) [44]
+-----------------------------------------------
+                0.00    0.00       1/1           Minisat::Solver::simplify() [13]
+[45]     0.0    0.00    0.00       1         Minisat::Solver::removeSatisfied(Minisat::vec<unsigned int, int>&) [45]
+-----------------------------------------------
+                0.00    0.00       1/1           Minisat::SimpSolver::SimpSolver() [63]
+[46]     0.0    0.00    0.00       1         Minisat::Solver::Solver() [46]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [37] _GLOBAL__sub_I__ZN7Minisat10SimpSolverC2Ev [42] Minisat::memUsedPeak(bool) [28] Minisat::Solver::newVar(Minisat::lbool, bool)
+  [38] _GLOBAL__sub_I__ZN7Minisat6SolverC2Ev [35] Minisat::DoubleOption::parse(char const*) [3] Minisat::Solver::search(int)
+  [39] _GLOBAL__sub_I_elapsed_t0 [43] Minisat::StringOption::parse(char const*) [1] Minisat::Solver::solve_()
+  [40] memReadPeak()          [44] Minisat::RegionAllocator<unsigned int>::alloc(int) [4] Minisat::Solver::analyze(unsigned int, Minisat::vec<Minisat::Lit, int>&, int&)
+  [31] mkElimClause(Minisat::vec<unsigned int, int>&, int, Minisat::Clause&) [23] Minisat::vec<Minisat::Option*, int>::push(Minisat::Option* const&) [27] Minisat::Solver::reduceDB()
+  [34] Minisat::BoolOption::parse(char const*) [26] void Minisat::sort<unsigned int, reduceDB_lt>(unsigned int*, int, reduceDB_lt) [25] Minisat::Solver::relocAll(Minisat::ClauseAllocator&)
+  [12] Minisat::SimpSolver::addClause_(Minisat::vec<Minisat::Lit, int>&) [22] Minisat::Solver::addClause_(Minisat::vec<Minisat::Lit, int>&) [13] Minisat::Solver::simplify()
+  [11] Minisat::SimpSolver::eliminateVar(int) [9] Minisat::Solver::attachClause(unsigned int) [5] Minisat::Solver::propagate()
+  [29] Minisat::SimpSolver::removeClause(unsigned int) [6] Minisat::Solver::litRedundant(Minisat::Lit) [46] Minisat::Solver::Solver()
+  [24] Minisat::SimpSolver::garbageCollect() [21] Minisat::Solver::removeClause(unsigned int) [7] Minisat::Solver::~Solver()
+  [33] Minisat::SimpSolver::backwardSubsumptionCheck(bool) [8] Minisat::Solver::pickBranchLit() [32] Minisat::IntOption::parse(char const*)
+  [30] Minisat::SimpSolver::merge(Minisat::Clause const&, Minisat::Clause const&, int, Minisat::vec<Minisat::Lit, int>&) [45] Minisat::Solver::removeSatisfied(Minisat::vec<unsigned int, int>&)
+  [41] Minisat::SimpSolver::~SimpSolver() [36] Minisat::Solver::rebuildOrderHeap()
