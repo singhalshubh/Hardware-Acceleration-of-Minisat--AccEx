@@ -362,6 +362,7 @@ scale_and_align_entries (void)
 
 int count = 0;
 int count_arg = 0;
+int tot_bin = 0;
 static void
 hist_assign_samples_1 (histogram *r)
 {
@@ -381,14 +382,20 @@ hist_assign_samples_1 (histogram *r)
       if (! bin_count)
 	continue;
       count_arg++;
-      DBG(SAMPLEDEBUG,printf ("\n\nCount is : %d\n",count_arg));
+      DBG(SAMPLEDEBUG,printf ("-----------------------------  "));
+      DBG(SAMPLEDEBUG,printf ("\n\nId is : %d\n",count_arg));
       bin_low_pc = lowpc + (bfd_vma) (hist_scale * i);
       bin_high_pc = lowpc + (bfd_vma) (hist_scale * (i + 1));
-      if(count == 1){
-        bin_count = 10;
+      if(count>=73 && count <=164) {
+        tot_bin+=bin_count;
+      }
+      if(count >= 73 && count <= 164 ){
+        bin_count = 1;
       }
       count++;
       count_time = bin_count;
+      DBG (SAMPLEDEBUG,
+     printf ("\n--->%s--->\n",symtab.base[k].name));
 
       DBG (SAMPLEDEBUG,
 	   printf (
@@ -396,8 +403,6 @@ hist_assign_samples_1 (histogram *r)
 		    (unsigned long) (sizeof (UNIT) * bin_low_pc),
 		    (unsigned long) (sizeof (UNIT) * bin_high_pc),
 		    bin_count));
-       DBG (SAMPLEDEBUG,
-     printf ("--->%s--->",symtab.base[k].name));
       total_time += count_time;
 
       /* Credit all symbols that are covered by bin I.
@@ -407,7 +412,7 @@ hist_assign_samples_1 (histogram *r)
 	 and J will never be less than 0.  */
       for (j = k - 1; j < symtab.len; k = ++j)
 	{
-	  DBG(SAMPLEDEBUG,printf ("--->%s--->",symtab.base[j].name));
+	  DBG(SAMPLEDEBUG,printf ("\nPrinting children--%s",symtab.base[j].name));
     sym_low_pc = symtab.base[j].hist.scaled_addr;
 	  sym_high_pc = symtab.base[j + 1].hist.scaled_addr;
 	  /* If high end of bin is below entry address,
@@ -424,14 +429,6 @@ hist_assign_samples_1 (histogram *r)
 	    MIN (bin_high_pc, sym_high_pc) - MAX (bin_low_pc, sym_low_pc);
 	  if (overlap > 0)
 	    {
-	      DBG (SAMPLEDEBUG,
-		   printf (
-	       "[assign_samples] [0x%lx,0x%lx) %s gets %f ticks %ld overlap",
-			   (unsigned long) symtab.base[j].addr,
-			   (unsigned long) (sizeof (UNIT) * sym_high_pc),
-			   symtab.base[j].name, overlap * count_time / hist_scale,
-			   (long) overlap));
-
 	      addr = symtab.base[j].addr;
 	      credit = overlap * count_time / hist_scale;
 
@@ -694,6 +691,7 @@ hist_print (void)
   }
 
   printf("Tot is: %f\n",tot );
+  printf("Total time in bin is : %d\n",tot_bin );
 
   for (sym_index = 0; sym_index < symtab.len; ++sym_index) {
   if (sym_lookup (&syms[INCL_FLAT], addr)
