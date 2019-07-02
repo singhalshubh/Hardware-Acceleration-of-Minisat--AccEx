@@ -386,10 +386,9 @@ hist_assign_samples_1 (histogram *r)
       DBG(SAMPLEDEBUG,printf ("\n\nId is : %d\n",count_arg));
       bin_low_pc = lowpc + (bfd_vma) (hist_scale * i);
       bin_high_pc = lowpc + (bfd_vma) (hist_scale * (i + 1));
-      if(count>=73 && count <=164) {
+      if(count>=132 && count <=250) {
         tot_bin+=bin_count;
-      }
-      if(count >= 73 && count <= 164 ){
+        DBG(SAMPLEDEBUG,printf ("Inside bin_count change"));
         bin_count = 1;
       }
       count++;
