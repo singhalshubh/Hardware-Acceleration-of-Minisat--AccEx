@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/singhalshubh/hardware-acceleration-of-minisat--accex/badge)](https://www.codefactor.io/repository/github/singhalshubh/hardware-acceleration-of-minisat--accex)
+
 USC-Viterbi 2019 Internship - Prof. Sandeep Gupta and Prof. Pierluigi Nuzzo.
 
 # Problem Statement
